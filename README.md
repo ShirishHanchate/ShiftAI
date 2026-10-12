@@ -65,8 +65,8 @@ Large telecom, banking, e-commerce and cloud companies run **round-the-clock NOC
 > Everything here (incidents, services, people, emails) is **fictional sample data**. No company code, APIs or credentials are used.
 
 ```
-Voice ─▶ Sarvam STT ─▶ editable transcript ─▶ Sarvam LLM extraction ─▶ human review/edit
-     ─▶ atomic confirm (Supabase txn + audit) ─▶ incoming-shift briefing ─▶ Ask ShiftSync (voice) ─▶ Sarvam TTS
+Voice ─▶ speech-to-text ─▶ editable transcript ─▶ LLM extraction ─▶ human review/edit
+     ─▶ atomic confirm (DB transaction + audit) ─▶ incoming-shift briefing ─▶ Ask ShiftSync (voice) ─▶ text-to-speech
                                    no handover? ─▶ Auto Handover (tickets + history + emails/chat)
 ```
 
