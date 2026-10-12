@@ -40,6 +40,28 @@ ShiftSync AI makes shift handover a **zero-friction, voice-first** process:
 
 That frees hours of engineer time every week, cuts the context lost at shift change, and gets the incoming shift working on the right incident sooner. AI handles the paperwork, and engineers keep control of the facts.
 
+## How large enterprises benefit (e.g. telecom operators like Jio)
+
+Large telecom, banking, e-commerce and cloud companies run **round-the-clock NOCs and SRE teams across many sites and shifts**. A telecom operator, for example, monitors core network, RAN, OSS/BSS, billing, payments and customer apps, with hundreds of engineers handing over live incidents every day. At that scale, small handover gaps become outages, SLA penalties and unhappy customers.
+
+| Enterprise need | How ShiftSync AI helps |
+| --- | --- |
+| **Massive scale**: hundreds of engineers, three shifts a day, many sites | Saves about 8 min per handover. *Illustrative:* 300 engineers × 1 handover per day × 8 min is about **40 engineer-hours saved every day**, or around 1,200 hours a month |
+| **Multilingual teams across India** | Engineers can speak in English, Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Bengali or Gujarati, using Sarvam's Indian-language speech models |
+| **Faster SEV1 / network-outage response** | The incoming shift gets a prioritised briefing in seconds: overdue items, blockers, pending approvals and owners. That cuts time-to-context and helps reduce MTTR |
+| **Compliance and audit** (telecom regulators, ISO 27001, ITIL) | Every change carries a before/after audit record, the original voice transcript and the reviewer's decision, so you can show exactly who handed over what and when |
+| **Tickets that match reality** | Tickets are updated at every shift change rather than at the end of the week. Fewer stale tickets mean better reporting for service owners and leadership |
+| **Knowledge that doesn't walk out the door** | Context from attrition, leave and vendor or contractor rotations is captured in structured records rather than in people's heads |
+| **Responsible, data-sovereign AI** | Built on Sarvam AI, an Indian AI stack. The AI only proposes and humans confirm. Evidence checks block hallucinated facts, and the copilot is read-only |
+| **Fits existing tools** | Designed to sit alongside ServiceNow, Jira, BMC Remedy, Slack, Teams and email. Auto Handover already reads tickets, emails and chat, and integrations are the next step on the roadmap |
+
+**Typical enterprise rollout:**
+1. **Pilot** with one NOC team. Connect the ticketing tool (read-only first) and measure handover time and MTTR before and after.
+2. **Expand** across regions, languages and teams (network, IT and app support), adding SSO and role-based access.
+3. **Integrate** write-back to ITSM tools, Slack or Teams briefings at shift start, and analytics: recurring blockers, owner gaps and handover-quality trends.
+
+> Jio is used here only as an example of a large Indian enterprise with 24×7 operations. This project is not affiliated with or endorsed by Jio, and the savings figures are illustrative estimates.
+
 > Everything here (incidents, services, people, emails) is **fictional sample data**. No company code, APIs or credentials are used.
 
 ```
