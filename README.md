@@ -2,6 +2,8 @@
 
 Voice-first shift handover for 24×7 IT operations, built on **Sarvam AI** and **Supabase**.
 
+**Live demo: https://shift-ai-rouge.vercel.app/** (no login needed)
+
 The outgoing engineer speaks a handover. ShiftSync transcribes it, extracts structured per-incident updates, and has a human confirm them before they're saved, with a full audit trail. It then produces a prioritised briefing for the incoming shift. If nobody recorded a handover, **Auto Handover** writes one from tickets, history, emails and chat. The incoming engineer can ask a voice agent questions and hear the answers.
 
 > Everything here (incidents, services, people, emails) is **fictional sample data**. No company code, APIs or credentials are used.
@@ -17,7 +19,7 @@ Voice ─▶ Sarvam STT ─▶ editable transcript ─▶ Sarvam LLM extraction 
 | | |
 | --- | --- |
 | **Track** | ShiftAI |
-| **Live app** | `https://<to-be-added>.vercel.app`. No login is needed; open it and use the left sidebar. Health check: `/api/health` |
+| **Live app** | **https://shift-ai-rouge.vercel.app/**. No login is needed; open it and use the left sidebar. Health check: [/api/health](https://shift-ai-rouge.vercel.app/api/health) |
 | **Demo video** | `https://youtu.be/<to-be-added>` (3 min 17 s, narrated) |
 | **Technical design document** | [docs/TECHNICAL_DESIGN.md](docs/TECHNICAL_DESIGN.md): overview, architecture and flow diagrams, setup and deployment, code walkthrough, assumptions |
 | **Tests** | `npm test`: 42 tests, about 93% line coverage (`npm run test:coverage`) |

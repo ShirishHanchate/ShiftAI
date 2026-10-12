@@ -5,7 +5,7 @@
 | **Project** | ShiftSync AI. Voice-first shift handover for 24×7 IT operations |
 | **Hackathon track** | ShiftAI |
 | **Repository** | https://github.com/ShirishHanchate/ShiftAI |
-| **Live demo** | _see README → "For judges"_ |
+| **Live demo** | https://shift-ai-rouge.vercel.app/ (no login needed) |
 | **Demo video** | _see README → "For judges"_ |
 | **Stack** | Next.js 16 (App Router) · TypeScript · Tailwind v4 · shadcn/ui · Zod 4 · Supabase Postgres · Sarvam AI (STT `saaras:v4`, LLM `sarvam-105b`, TTS `bulbul:v3`) |
 
