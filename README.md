@@ -2,9 +2,43 @@
 
 Voice-first shift handover for 24×7 IT operations, built on **Sarvam AI** and **Supabase**.
 
-**Live demo: https://shift-ai-rouge.vercel.app/** (no login needed)
+**Live demo: https://shift-ai-rouge.vercel.app/** (no login needed) · **Demo video: https://youtu.be/oh2rgjN4jIU**
 
-The outgoing engineer speaks a handover. ShiftSync transcribes it, extracts structured per-incident updates, and has a human confirm them before they're saved, with a full audit trail. It then produces a prioritised briefing for the incoming shift. If nobody recorded a handover, **Auto Handover** writes one from tickets, history, emails and chat. The incoming engineer can ask a voice agent questions and hear the answers.
+[![ShiftSync AI demo video](https://img.youtube.com/vi/oh2rgjN4jIU/hqdefault.jpg)](https://youtu.be/oh2rgjN4jIU)
+
+## The problem
+
+Every 24×7 operations team (NOC, SRE, IT support, cloud ops) hands live incidents from one shift to the next, several times a day. Today that handover is manual:
+
+- **It takes time.** Each engineer spends **about 10 minutes** per handover typing notes, updating every ticket by hand and walking the next shift through each incident, at the end of a tiring shift.
+- **Context gets lost.** Rollbacks, pending approvals, owners and "don't touch X" warnings live in someone's head or a chat thread. Tickets go stale.
+- **Nobody is accountable.** Afterwards, no one can say what was handed over, by whom, or what changed.
+- **The incoming shift starts blind.** They have to piece the situation together from tickets, emails and chat, which slows the response to SEV1s.
+
+The result is slower incident resolution, repeated work, missed follow-ups and stressed engineers.
+
+## What ShiftSync AI does
+
+ShiftSync AI makes shift handover a **zero-friction, voice-first** process:
+
+1. **Speak instead of typing.** The outgoing engineer talks for about a minute, in English or an Indian language. Sarvam speech-to-text transcribes it.
+2. **AI drafts the ticket updates.** Sarvam's LLM extracts per-incident status, completed and pending actions, owners, blockers and deadlines. **Every fact must be backed by a quote from the transcript**, and invented owners or IDs are stripped.
+3. **A human stays in control.** The engineer approves, edits or rejects each update. Nothing is saved until they confirm, and "Resolved" needs an explicit extra tick.
+4. **Saves are safe and audited.** Approved changes are written in one database transaction, with a before/after audit trail linked to the original transcript.
+5. **The incoming shift is ready in seconds.** They get a prioritised briefing (overdue items, blockers, deadlines, owner gaps), plus **Auto Handover**, which builds a handover from tickets, emails and chat even when nobody recorded one.
+6. **They can ask questions by voice.** The read-only copilot answers questions like *"Why is INC-1044 still unresolved?"* from real records, cites incident IDs and reads the answer aloud.
+
+## Why it matters
+
+| | Manual handover | With ShiftSync AI |
+| --- | --- | --- |
+| Time per engineer, per handover | **about 10 min** | **about 2 min** (1 min speaking + 1 min review) |
+| Ticket freshness | Often stale | Updated at every shift change |
+| Accountability | Verbal, untraceable | Full audit trail with transcript |
+| Incoming-shift ramp-up | Reading tickets, emails and chat | Prioritised briefing + voice Q&A |
+| AI risk | n/a | Evidence-checked, human-confirmed, read-only agent |
+
+That frees hours of engineer time every week, cuts the context lost at shift change, and gets the incoming shift working on the right incident sooner. AI handles the paperwork, and engineers keep control of the facts.
 
 > Everything here (incidents, services, people, emails) is **fictional sample data**. No company code, APIs or credentials are used.
 
@@ -20,7 +54,7 @@ Voice ─▶ Sarvam STT ─▶ editable transcript ─▶ Sarvam LLM extraction 
 | --- | --- |
 | **Track** | ShiftAI |
 | **Live app** | **https://shift-ai-rouge.vercel.app/**. No login is needed; open it and use the left sidebar. Health check: [/api/health](https://shift-ai-rouge.vercel.app/api/health) |
-| **Demo video** | `https://youtu.be/<to-be-added>` (4 min 9 s, narrated) |
+| **Demo video** | **https://youtu.be/oh2rgjN4jIU** (4 min 9 s, narrated) |
 | **Technical design document** | [docs/TECHNICAL_DESIGN.md](docs/TECHNICAL_DESIGN.md): overview, architecture and flow diagrams, setup and deployment, code walkthrough, assumptions |
 | **Tests** | `npm test`: 42 tests, about 93% line coverage (`npm run test:coverage`) |
 

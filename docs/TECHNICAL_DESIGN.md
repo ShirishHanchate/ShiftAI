@@ -6,7 +6,7 @@
 | **Hackathon track** | ShiftAI |
 | **Repository** | https://github.com/ShirishHanchate/ShiftAI |
 | **Live demo** | https://shift-ai-rouge.vercel.app/ (no login needed) |
-| **Demo video** | _see README → "For judges"_ |
+| **Demo video** | https://youtu.be/oh2rgjN4jIU |
 | **Stack** | Next.js 16 (App Router) · TypeScript · Tailwind v4 · shadcn/ui · Zod 4 · Supabase Postgres · Sarvam AI (STT `saaras:v4`, LLM `sarvam-105b`, TTS `bulbul:v3`) |
 
 ---
