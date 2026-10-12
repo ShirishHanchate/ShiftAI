@@ -1,6 +1,6 @@
 # ShiftSync AI
 
-Voice-first shift handover for 24×7 IT operations, built on **Sarvam AI** and **Supabase**.
+Voice-first shift handover for 24×7 IT operations.
 
 **Live demo: https://shift-ai-rouge.vercel.app/** (no login needed) · **Demo video: https://youtu.be/oh2rgjN4jIU**
 
@@ -21,8 +21,8 @@ The result is slower incident resolution, repeated work, missed follow-ups and s
 
 ShiftSync AI makes shift handover a **zero-friction, voice-first** process:
 
-1. **Speak instead of typing.** The outgoing engineer talks for about a minute, in English or an Indian language. Sarvam speech-to-text transcribes it.
-2. **AI drafts the ticket updates.** Sarvam's LLM extracts per-incident status, completed and pending actions, owners, blockers and deadlines. **Every fact must be backed by a quote from the transcript**, and invented owners or IDs are stripped.
+1. **Speak instead of typing.** The outgoing engineer talks for about a minute, in English or an Indian language. Speech-to-text transcribes it.
+2. **AI drafts the ticket updates.** An LLM extracts per-incident status, completed and pending actions, owners, blockers and deadlines. **Every fact must be backed by a quote from the transcript**, and invented owners or IDs are stripped.
 3. **A human stays in control.** The engineer approves, edits or rejects each update. Nothing is saved until they confirm, and "Resolved" needs an explicit extra tick.
 4. **Saves are safe and audited.** Approved changes are written in one database transaction, with a before/after audit trail linked to the original transcript.
 5. **The incoming shift is ready in seconds.** They get a prioritised briefing (overdue items, blockers, deadlines, owner gaps), plus **Auto Handover**, which builds a handover from tickets, emails and chat even when nobody recorded one.
@@ -47,12 +47,12 @@ Large telecom, banking, e-commerce and cloud companies run **round-the-clock NOC
 | Enterprise need | How ShiftSync AI helps |
 | --- | --- |
 | **Massive scale**: hundreds of engineers, three shifts a day, many sites | Saves about 8 min per handover. *Illustrative:* 300 engineers × 1 handover per day × 8 min is about **40 engineer-hours saved every day**, or around 1,200 hours a month |
-| **Multilingual teams across India** | Engineers can speak in English, Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Bengali or Gujarati, using Sarvam's Indian-language speech models |
+| **Multilingual teams across India** | Engineers can speak in English, Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Bengali or Gujarati, using Indian-language speech models |
 | **Faster SEV1 / network-outage response** | The incoming shift gets a prioritised briefing in seconds: overdue items, blockers, pending approvals and owners. That cuts time-to-context and helps reduce MTTR |
 | **Compliance and audit** (telecom regulators, ISO 27001, ITIL) | Every change carries a before/after audit record, the original voice transcript and the reviewer's decision, so you can show exactly who handed over what and when |
 | **Tickets that match reality** | Tickets are updated at every shift change rather than at the end of the week. Fewer stale tickets mean better reporting for service owners and leadership |
 | **Knowledge that doesn't walk out the door** | Context from attrition, leave and vendor or contractor rotations is captured in structured records rather than in people's heads |
-| **Responsible, data-sovereign AI** | Built on Sarvam AI, an Indian AI stack. The AI only proposes and humans confirm. Evidence checks block hallucinated facts, and the copilot is read-only |
+| **Responsible, data-sovereign AI** | Uses an Indian AI stack. The AI only proposes and humans confirm. Evidence checks block hallucinated facts, and the copilot is read-only |
 | **Fits existing tools** | Designed to sit alongside ServiceNow, Jira, BMC Remedy, Slack, Teams and email. Auto Handover already reads tickets, emails and chat, and integrations are the next step on the roadmap |
 
 **Typical enterprise rollout:**
