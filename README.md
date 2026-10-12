@@ -20,7 +20,7 @@ Voice ─▶ Sarvam STT ─▶ editable transcript ─▶ Sarvam LLM extraction 
 | --- | --- |
 | **Track** | ShiftAI |
 | **Live app** | **https://shift-ai-rouge.vercel.app/**. No login is needed; open it and use the left sidebar. Health check: [/api/health](https://shift-ai-rouge.vercel.app/api/health) |
-| **Demo video** | `https://youtu.be/<to-be-added>` (3 min 17 s, narrated) |
+| **Demo video** | `https://youtu.be/<to-be-added>` (4 min 9 s, narrated) |
 | **Technical design document** | [docs/TECHNICAL_DESIGN.md](docs/TECHNICAL_DESIGN.md): overview, architecture and flow diagrams, setup and deployment, code walkthrough, assumptions |
 | **Tests** | `npm test`: 42 tests, about 93% line coverage (`npm run test:coverage`) |
 
